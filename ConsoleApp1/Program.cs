@@ -12,14 +12,15 @@ namespace OOP
         {
             Dom mojDom = new Dom("Activ 1","aktívny","nie", 3, 30.9f, 15.7f);
             mojDom.PoskytniInformacie();
-            Console.Write("Percento zastavanej plochy je: {0}\n", mojDom.ZistiVyuzitelnostZastavanejPlochy());
+            Console.Write("Percento zastavanej plochy je: {0}\n\n", mojDom.ZistiVyuzitelnostZastavanejPlochy());
 
             Dom susedovDom = new Dom("Activ 2", "aktívny", "nie", 3, 130.9f, 80.7f);
             susedovDom.PoskytniInformacie();
-            Console.Write("Percento zastavanej plochy je: {0}\n", susedovDom.ZistiVyuzitelnostZastavanejPlochy());
+            Console.Write("Percento zastavanej plochy je: {0}\n\n", susedovDom.ZistiVyuzitelnostZastavanejPlochy());
 
             Chata chata = new Chata("Chata 1", "pasívny", "nie", 6, 1500, 220, "áno veľká");
             chata.PoskytniInformacie();
+            chata.PopisChaty();
 
             Console.ReadLine();
 
